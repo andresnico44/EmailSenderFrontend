@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Email</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div>
+        <h1>Enviar Email</h1>
+        <form id="emailForm">
+            <label for="to">Destino:</label>
+            <input type="email" id="to" required><br>
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" required><br>
+            <label for="cc">CC:</label>
+            <input type="email" id="cc" multiple><br>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="status"></p>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
